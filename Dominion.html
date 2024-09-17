@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dominion Domination - Dylan Simotes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oxanium:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
+    <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"
+    />
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <link href="https://unpkg.com/nanogallery2@2.4.2/dist/css/nanogallery2.min.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://unpkg.com/nanogallery2@2.4.2/dist/jquery.nanogallery2.min.js"></script>
+
+
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <img class="logoImage" src="images/NavLogo.png" alt="Logo">
+            <h1>Dylan Simotes</h1>
+        </header>
+        <nav>
+            <img class="navImage" src="images/NavOverlay.png" alt="Navigation Overlay">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+
+                <li><a class="current" href="index.html#GameSection">Games</a></li>
+
+                <li><a href="index.html#3DSection">3D</a></li>
+                
+                <li><a href="index.html#ArtSection">2D</a></li>
+
+            </ul>
+        </nav>
+    </div>
+	<div id="wrapper">
+
+                <div class="heroText">
+                    <h1>Dylan Simotes <br> <h2>Designer | Developer | Artist<h2> </h1>
+                </div>
+            
+            <main>
+                <h2> Dominion Domination </h2>
+                    <section>
+
+
+                        <div class="f-carousel" id="myCarousel1">
+                            <div class="f-carousel__slide"><img src="images/dominion/box.png" alt="BoxArt"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/2.jpg" alt="Box"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/1.jpg" alt="Board"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/3.jpg" alt="Cards"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/cards.png" alt="Card designs"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/buildings.png" alt="Building Artworks"></div>
+                            <div class="f-carousel__slide"><img src="images/dominion/leaders.png" alt="Leader Buildings"></div>
+                        </div>
+                        
+                        <p>Take control of one of six kingdoms and battle it out for territorial control. Expand your kingdom and build structures. Maybe even fight for land. Your goal is to cover more of the board than your opponents within the turn limit. This is the first of two games created for my Creative Technologies capstone at Illinois State University.</p>
+                        <p>I created the Artwork for each of the game pieces as well as the artwork for each kingdom leader. I was also in charge of creating the board tiles and the game's logo, which was designed to mix classic medieval visuals with imagery of blueprints and design work. This was done to imply the main goal of building and expanding your kingdom. Along with the logo I also did the boxart illustration, which was meant to be a idealization of the game's board.</p>
+                    </section>
+            </main>
+            
+            <footer>
+                <ul>
+                    <a class="bi bi-envelope-at" href="mailto:dsimotes@gmail.com" target="blank"></a>
+
+                    <a class="bi bi-twitter" href="https://twitter.com/Tazmi_" target="blank"></a>
+
+                    <a class="bi bi-instagram" href="https://www.instagram.com/tazmii_/" target="blank"></a>
+
+                    <a class="bi bi-linkedin" href="https://www.linkedin.com/in/dylan-simotes-1962a9211/" target="blank"></a>
+
+                </ul>
+            </footer>
+    </div>
+
+    <script>
+        const container = document.getElementById("myCarousel1");
+        const options = { infinite: true };
+
+        new Carousel(container, options);
+    </script>
+</body>
+</html>

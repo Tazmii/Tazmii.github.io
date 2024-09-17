@@ -1,0 +1,289 @@
+body {
+    background-color: #490606;
+    background-image: url(images/chaosGrain.png);
+    background-attachment: fixed;
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+  
+#headerWrapper {
+  margin: auto;
+  width: auto;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  position:sticky;
+  top:0;
+  z-index: 9999;
+  filter:drop-shadow(0px 5px 5px #130101);
+}
+header h1{
+  font-family: 'Oxanium', cursive;
+  color: white;
+  text-align:left;
+  padding-left: 150px;
+}
+.logoImage{
+  position:absolute;
+  top: 0px;
+  left: 0px; 
+  height:130px;
+  width:130px;
+}
+header{
+  grid-column: span 5;
+  background-color: #9E2222;
+  margin-bottom: 24px;
+  margin-left: 24px;
+  margin-top: 24px;
+}
+nav{
+  position:relative;
+  grid-column: span 7;
+  background-color: #9E2222;
+  /* background-image: url(NavOverlay.png); */
+  text-align: center;
+  font-size: 26px;
+  margin: 24px;
+  margin-left: 0px;
+  margin-right:0px;
+}
+nav ul {
+  list-style-type: none;
+  padding-bottom: 0;
+  position: absolute;
+  top: 0px;
+  left: 200px;
+}
+nav li{
+  width: 120px;
+  display: inline-block;
+}
+nav li a{
+  display: block;
+  color:#2B2B2B;
+  font-family: 'Oxanium', cursive;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+.navImage {
+  position: absolute;
+  top: -25px;
+  left: 0px; 
+  height:130px;
+  width:100%;
+} 
+a:hover{
+  transform:scale(120%);
+  color:#A9A9A9;
+}
+.current{
+  text-decoration: underline;
+}
+/*----------*/
+#wrapper {
+    margin: 24px auto;
+    width: 1200px;
+    padding: 0px;
+    background-color: rgb(223, 205, 205);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    box-shadow: 0px 0px 10px #130101;
+}
+h1{
+  text-align: center;
+  color:white;
+}
+.heroText{
+  grid-column: span 12;
+  height:300px;
+  font-family: 'Oxanium', cursive;
+  font-size: 200%;
+  line-height: 125px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 5px black;
+  background-image: url(images/HomeBanner.png);
+}
+.heroText h2{
+  font-family: 'Oxanium', cursive;
+  border: none;
+  font-size:75%;
+  line-height: 0px;
+  color:white;
+}
+
+h2{
+  text-align: center;
+  color:#2B2B2B;
+  font-size: 200%;
+  padding-bottom:10px;
+  border-bottom: solid #2B2B2B 3px ;
+}
+
+main{
+  grid-column: span 12;
+  font-family: helvetica, Arial, sans-serif;
+  font-weight: bold;
+  padding: 10px;
+}
+/*----------*/
+p{
+  color: #2B2B2B;
+  font-size: 24px;
+  padding:40px;
+  padding-top:0;
+  padding-bottom:0;
+}
+iframe{
+  aspect-ratio: 16/9;
+    width: 100%;
+    display: block;
+}
+.f-carousel{
+  width: 100%;
+  border:none;
+    --f-carousel-theme-color: #A9A9A9!important; /* change arrow color */
+    --f-button-svg-width: 50px!important; /* arrow width */
+    --f-button-svg-height: 50px!important; /* arrow height */
+    --f-button-svg-stroke-width: 2.5!important; /* arrow weight */
+    --f-button-svg-disabled-opacity: 0.5!important; /* arrow disabled fade */
+}
+#myCarousel1{
+  float:left;
+}
+.f-carousel img{
+  width:100%;
+}
+#myCarousel {
+  margin-bottom: 24px;
+  padding:12px;
+}
+
+/*----------*/
+#myMosaic{
+  text-align:center;
+}
+/*----------*/
+
+footer{
+  grid-column: span 12;
+  display:inline-block;
+  border-top: 5px solid #A9A9A9;
+  text-align: center;
+  padding-top:20px;
+  padding-bottom: 20px;
+  background-color: #2B2B2B;
+}
+footer a{
+  color: #A9A9A9;
+  font-size: 30px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 24px;
+  transition: all 1s;
+}
+footer a:hover{
+  color:#2B2B2B;
+  background-color:#A9A9A9;
+}
+
+/*----------*/
+.boxCollection{
+  text-align: center;
+}
+.grow{
+  grid-column: span 4;
+  margin: auto;
+  margin-top:25px;
+  margin-bottom:25px;
+  width: 300px;
+  height: 150px;
+  font-size: relative;
+  line-height:150px;
+  text-align:center;
+  transition: .3s ease;
+  position:relative;
+  filter:drop-shadow(3px 3px 5px black);
+  display: inline-block;
+}
+.grow a{
+  text-decoration: none;
+  color:white;
+  filter:drop-shadow(3px 3px 5px black);
+  display:block;
+  transition: .3s ease;
+}
+.grow:hover{
+  z-index: 9998;
+  transform:scale(120%);
+}
+/*----------*/
+#game1{
+  background-image:url(images/Games/fish/6.png);
+  background-position: center;
+  background-size: cover;
+}
+#game2{
+  background-image:url(images/Games/dominion/2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+#game3{
+  background-image:url(images/Games/gamejam/Artboard\ 1.png);
+  background-position: center;
+  background-size: cover;
+}
+#game4{
+  background-image:url(images/Games/web/web01.png);
+  background-position: center;
+  background-size: cover;
+}
+#game5{
+  background-image:url(images/Games/jump/GAME01.png);
+  background-position: center;
+  background-size: cover;
+}
+
+#model1{
+  background-image:url(images/icons/peppino.png);
+  background-position: center;
+  background-size: cover;
+}
+#model2{
+  background-image:url(images/icons/transam.png);
+  background-position: center;
+  background-size: cover;
+}
+#model3{
+  background-image:url(images/icons/natie.png);
+  background-position: center;
+  background-size: cover;
+}
+#model4{
+  background-image:url(images/icons/doc.png);
+  background-position: center;
+  background-size: cover;
+}
+#model5{
+  background-image:url(images/icons/okabe.png);
+  background-position: center;
+  background-size: cover;
+}
+#model6{
+  background-image:url(images/bedroom/midtermthumb.png);
+  background-position: center;
+  background-size: cover;
+}
+#model7{
+  background-image:url(images/mario/mari_thumb.jpg);
+  background-position: center;
+  background-size: cover;
+}
