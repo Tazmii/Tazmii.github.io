@@ -251,6 +251,11 @@ footer a:hover{
   background-position: center;
   background-size: cover;
 }
+#game6{
+  background-image:url(images/icons/snowball.png);
+  background-position: center;
+  background-size: cover;
+}
 
 #model1{
   background-image:url(images/icons/peppino.png);
